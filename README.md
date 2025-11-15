@@ -219,7 +219,7 @@ Make sure to restart your terminal or run `source ~/.zshrc` after installation. 
 
 ## License
 
-[Add license information here if applicable]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 

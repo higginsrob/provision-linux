@@ -51,14 +51,14 @@ else
     echo "* Ollama is already installed"
 fi
 
-additionspath="$root/shell-additions"
+shell_additions_path="$root/shell-additions"
 
-if [ -f "$HOME/.zshrc" ] && ! grep -q "$additionspath" "$HOME/.zshrc"; then
+if [ -f "$HOME/.zshrc" ] && ! grep -q "$shell_additions_path" "$HOME/.zshrc"; then
     read -p "Install ZSH shell-additions?: (y/N) " confirm
     if [ "$confirm" = "y" ]; then
         echo "" >>"$HOME/.zshrc"
         echo "# Shell Additions by Freshstack" >>"$HOME/.zshrc"
-        echo "for f in $additionspath/*; do source \$f; done" >>"$HOME/.zshrc"
+        echo "for f in $shell_additions_path/*; do source \$f; done" >>"$HOME/.zshrc"
     else
         echo "shell-additions not installed"
     fi
